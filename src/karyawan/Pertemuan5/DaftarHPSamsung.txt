@@ -1,0 +1,5 @@
+Galaxy S20,Android 10.2, 9000000
+Galaxy z Flip 3, Android 11, 14500000
+Galaxy Fold 3, Android 11, 25000000
+Galaxy a52, Android 10.1, 4500000
+Galaxy Note20 Ultra, Android 10,15900000 
