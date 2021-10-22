@@ -28,7 +28,8 @@ public class Handphone {
                 Samsung s = new Samsung();
                 s.setMerek(data[0]);
                 s.setOS(data[1]);
-                s.setHarga(data[2]);
+                double harga = Double.parseDouble(data[2]);
+                s.setHarga(harga);
 
                 listHP.add(s);
             }

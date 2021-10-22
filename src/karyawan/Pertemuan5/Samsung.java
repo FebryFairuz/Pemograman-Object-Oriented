@@ -4,8 +4,14 @@ public class Samsung {
     //1 buah atribute memiliki getter dan setter
     private String merek;
     private String OS;
-    private String harga;
+    private Double harga;
 
+    public Double getHarga() {
+        return harga;
+    }
+    public void setHarga(Double harga) {
+        this.harga = harga;
+    }
     public String getMerek() {
         return merek;
     }
@@ -17,11 +23,5 @@ public class Samsung {
     }
     public void setOS(String oS) {
         OS = oS;
-    }
-    public String getHarga() {
-        return harga;
-    }
-    public void setHarga(String harga) {
-        this.harga = harga;
     }
 }

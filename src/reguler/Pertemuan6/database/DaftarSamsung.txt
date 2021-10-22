@@ -1,0 +1,5 @@
+Smartphone,Android 11,8,Galaxy S21,8000000
+Flagship,Android 10,4,Galaxy A20,4200000
+Fold,Android 11,8,Galaxy Fold Gen 2,9000000
+Flip,Android 11,8,Galaxy Flip Gen 1,7000000
+Smartphone,Android 11,4,Galaxy S21 mini,8900000
