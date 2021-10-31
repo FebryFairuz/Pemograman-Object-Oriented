@@ -46,6 +46,7 @@ public class Main {
             System.out.println("Pilihan tidak terdaftar");
                 break;
         }
+        myObj.close();
     }
 
     public void InputMenuProduct(){
@@ -81,6 +82,7 @@ public class Main {
             default:
                 break;
         }
+        myObj.close();
     }
 
 
@@ -88,8 +90,7 @@ public class Main {
         Scanner myObj = new Scanner(System.in);
         System.out.println("\n===Input Samsung===");
         System.out.print("Masukan jumlah data yang dimasukan:");
-        int jmlData=0;
-        jmlData = Integer.parseInt(myObj.nextLine());
+        int jmlData=10;
         for (int i = 0; i < jmlData; i++) {
             Samsung s = new Samsung();
             System.out.println("#data ke-"+(i+1)+":");
@@ -117,7 +118,7 @@ public class Main {
             this.listSamsung.add(s);
         }
         System.out.println("\n");
-
+        myObj.close();
         return this.listSamsung;
         
     }
