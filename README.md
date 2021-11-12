@@ -19,6 +19,12 @@ Institute Business and Informatics Kesatuan Bogor
 3. Type this for compiling : javac NameFile.java
 4. Type this for run : java NameClass 
 
+Example how to `compile` and `run` the project
+
+> d:\IBIK\2020-2021\PBO>cd src/karyawan/Pertemuan1
+> d:\IBIK\2020-2021\PBO\src\karyawan\Pertemuan1>javac Handphone.java
+> d:\IBIK\2020-2021\PBO\src\karyawan\Pertemuan1>java Handphone
+
 ## Collection of Practical Assignments
 
 Upload your source code to version control by GIT such as GITHUB/GITLAB/BITBUCKET and add @FebryFairuz to your repository as a member with role Maintener.
