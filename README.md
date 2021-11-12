@@ -22,8 +22,11 @@ Institute Business and Informatics Kesatuan Bogor
 Example how to `compile` and `run` the project
 
 > d:\IBIK\2020-2021\PBO>cd src/karyawan/Pertemuan1
+
 > d:\IBIK\2020-2021\PBO\src\karyawan\Pertemuan1>javac Handphone.java
+
 > d:\IBIK\2020-2021\PBO\src\karyawan\Pertemuan1>java Handphone
+
 
 ## Collection of Practical Assignments
 
