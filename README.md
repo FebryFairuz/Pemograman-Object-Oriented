@@ -3,6 +3,8 @@
 Academic Calendar 2020-2021 
 Class of TI-20-PA (A1 and A2) and TI-20-KA
 
+Institute Business and Informatics Kesatuan Bogor
+
 ## Tools for this course
 
 - JAVA SDK KIT
