@@ -1,18 +1,22 @@
-## Getting Started
+## Source Code Materi Pemograman Berbasis Objek & Lab
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Academic Calendar 2020-2021 
+Class of TI-20-PA (A1 and A2) and TI-20-KA
 
-## Folder Structure
+## Tools for this course
 
-The workspace contains two folders by default, where:
+- JAVA SDK KIT
+- IDE Text Editor (Notepad++, Sublime, VSCode, Eclipse, Netbeans)
+- Command Line (Windows) or Terminal (Linux)
+- Star UML
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## How to compile and Run JAVA File
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Open terminal/command line
+2. Enter to directory of your project
+3. Type this for compiling : javac NameFile.java
+4. Type this for run : java NameClass 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Collection of Practical Assignments
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Upload your source code to version control by GIT such as GITHUB/GITLAB/BITBUCKET and add @FebryFairuz to your repository as a member with role Maintener.

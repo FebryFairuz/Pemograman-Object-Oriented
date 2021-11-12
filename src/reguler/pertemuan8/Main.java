@@ -1,4 +1,4 @@
-package karyawan.pertemuan8;
+package reguler.pertemuan8;
 
 import java.util.ArrayList;
 import java.util.List;

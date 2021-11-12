@@ -14,8 +14,7 @@ public class Main {
     private List<Samsung> listSamsung  = new ArrayList<Samsung>();
 
     public static void main(String[] args) {
-        Main m = new Main();
-        m. ();        
+        Main m = new Main();        
     }
 
 
