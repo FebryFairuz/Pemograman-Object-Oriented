@@ -30,4 +30,4 @@ Example how to `compile` and `run` the project
 
 ## Collection of Practical Assignments
 
-Upload your source code to version control by GIT such as GITHUB/GITLAB/BITBUCKET and add @FebryFairuz to your repository as a member with role Maintener.
+Upload your source code to version control by GIT such as GITHUB/GITLAB/BITBUCKET and add `@FebryFairuz` to your repository as a member with role Maintener.
