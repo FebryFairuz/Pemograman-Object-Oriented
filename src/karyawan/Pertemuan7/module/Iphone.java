@@ -1,28 +1,20 @@
-package karyawan.Pertemuan7.module;
+package karyawan.pertemuan7.module;
 
-public class Iphone extends Handphone{ //sub class
-    private String Merek;
-    private Double Harga;
-    private String Series;
+public class Iphone extends Handphone{
+    private String Model;
+    private Integer Camera;
 
-    public String getMerek() {
-        return Merek;
+    public String getModel() {
+        return Model;
     }
-    public void setMerek(String merek) {
-        Merek = merek;
+    public void setModel(String model) {
+        Model = model;
     }
-    public Double getHarga() {
-        return Harga;
+    public Integer getCamera() {
+        return Camera;
     }
-    public void setHarga(Double harga) {
-        Harga = harga;
-    }
-    public String getSeries() {
-        return Series;
-    }
-    public void setSeries(String series) {
-        Series = series;
-    }
-
+    public void setCamera(Integer camera) {
+        Camera = camera;
+    }    
     
 }

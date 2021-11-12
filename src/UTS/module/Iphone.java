@@ -1,4 +1,4 @@
-package karyawan.pertemuan8.module;
+package UTS.module;
 
 public class Iphone extends Handphone{
     private String Model;

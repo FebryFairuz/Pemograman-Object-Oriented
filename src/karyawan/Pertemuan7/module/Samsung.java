@@ -1,21 +1,21 @@
-package karyawan.Pertemuan7.module;
+package karyawan.pertemuan7.module;
 
-public class Samsung extends Handphone{ //sub class
-    private String Merek;
+public class Samsung extends Handphone{
+    private String Type;
     private Double Price;
-
-    public String getMerek() {
-        return Merek;
+    
+    public String getType() {
+        return Type;
     }
-    public void setMerek(String merek) {
-        Merek = merek;
+    public void setType(String type) {
+        Type = type;
     }
     public Double getPrice() {
         return Price;
     }
     public void setPrice(Double price) {
         Price = price;
-    }
+    } 
 
     
 }

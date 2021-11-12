@@ -1,15 +1,15 @@
-package karyawan.Pertemuan7.module;
+package karyawan.pertemuan7.module;
 
-public class Handphone { //main class
-    private String Type;
+public class Handphone { 
+    private String Merek;
     private String OS;
     private Integer RAM;
 
-    public String getType() {
-        return Type;
+    public String getMerek() {
+        return Merek;
     }
-    public void setType(String type) {
-        Type = type;
+    public void setMerek(String merek) {
+        Merek = merek;
     }
     public String getOS() {
         return OS;
@@ -22,7 +22,5 @@ public class Handphone { //main class
     }
     public void setRAM(Integer rAM) {
         RAM = rAM;
-    }
-    
-    
+    }    
 }
