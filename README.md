@@ -7,10 +7,10 @@ Institute Business and Informatics Kesatuan Bogor
 
 ## Tools for this course
 
-- JAVA SDK KIT
+- JAVA SDK KIT [here](https://www.oracle.com/java/technologies/downloads/#jdk17-windows).
 - IDE Text Editor (Notepad++, Sublime, VSCode, Eclipse, Netbeans)
 - Command Line (Windows) or Terminal (Linux)
-- Star UML
+- Star UML [here](https://staruml.io/download) or use online UML [here](https://creately.com/lp/uml-diagram-tool/)
 
 ## How to compile and Run JAVA File
 
