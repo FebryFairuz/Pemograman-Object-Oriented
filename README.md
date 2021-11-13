@@ -39,7 +39,7 @@ Example how to `compile` and `run` the project
 ## How to Install Maven
 
 1. Download Apache Maven
-2. Extract folder and copy folder to c:/Program File
+2. Extract the file and copy folder to c:/Program File
 3. Create JAVA_HOME in environment variable on your PC
 4. Click `New` put Variable Name : `JAVA_HOME` and Variable Value : `C:\Program Files\Java\jdk-17.0.1` and then OK
 5. Still in environtment variable, choose variable `PATH`. Click `Edit` and then click button `New` put the path of maven `C:\Program Files\apache-maven-3.8.3\bin` and then klik `OK` and `OK`
