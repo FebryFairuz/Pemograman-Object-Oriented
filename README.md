@@ -45,6 +45,13 @@ Example how to `compile` and `run` the project
 5. Still in environtment variable, choose variable `PATH`. Click `Edit` and then click button `New` put the path of maven `C:\Program Files\apache-maven-3.8.3\bin` and then klik `OK` and `OK`
 6. Open terminal type `mvn -v`
 
+## How to create project Maven
+1. Open terminal dan tulis script dibawah ini 
+	`mvn -B archetype:generate -DgroupId=com.sample.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4`
+2. Masuk kedalam path project yang telah dibuat
+	`cd my-app`
+3. Compiler untuk maven `mvn clean package`
+4. Runing project `mvn exec:java -Dexec.mainClass="com.sample.app.App"`	
 
 ## Collection of Practical Assignments
 
