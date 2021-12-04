@@ -12,6 +12,7 @@ Institute Business and Informatics Kesatuan Bogor
 - Command Line (Windows) or Terminal (Linux)
 - Star UML [here](https://staruml.io/download) or use online UML [here](https://creately.com/lp/uml-diagram-tool/)
 - Apache Maven [here](https://maven.apache.org/download.cgi) 
+- Library Eclipse Window Builder [here](https://download.eclipse.org/windowbuilder/latest/)
 
 ## How to compile and Run JAVA File
 
