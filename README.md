@@ -33,8 +33,8 @@ Example how to `compile` and `run` the project
 
 1. Open terminal/command line
 2. Enter to directory of your project
-3. Type this for compiling : javac -d ../bin packageName/NameFile.java
-4. Type this for run : java -cp ../bin packageName.NamaClass
+3. Type this for compiling : `javac -d ../bin packageName/NameFile.java`
+4. Type this for run : `java -cp ../bin packageName.NamaClass`
 
 
 ## How to Install Maven
