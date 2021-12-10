@@ -12,8 +12,7 @@ public class ConnectionDB {
         try{
         	String namadriver = "com.mysql.jdbc.Driver"; 
             Class.forName(namadriver);
-            System.out.println("berhasil load driver");
-            //JOptionPane.showMessageDialog(this, "Berhasil Diinput", "Berhasil", JOptionPane.INFORMATION_MESSAGE); 
+            System.out.println("berhasil load driver"); 
         }catch(ClassNotFoundException cnfe){
             System.out.println("Tidak ada Driver "+cnfe);
         }
@@ -24,8 +23,14 @@ public class ConnectionDB {
             System.out.println("Berhasil koneksi");
         }catch(SQLException se){
             System.out.println("Gagal koneksi "+se);
-        //JOptionPane.showMessageDialog(null,”Gagal koneksi…MySQL server belum aktif”);
         }
+        
+        try {
+			koneksi.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         return koneksi;
 	}
 	
