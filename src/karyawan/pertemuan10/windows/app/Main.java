@@ -9,6 +9,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -21,6 +22,9 @@ public class Main extends JFrame {
 	private JTextField textUsername;
 	private JPasswordField textPassword;
 	private JButton btnSignIn;
+	
+	private String myUserName = "0123456789";
+	private String myPassword = "290292";
 
 	public static void main(String[] args) {
 		Main frmLoginPage = new Main(); //initalisasi object pada class Main sebagai bagian dari JFrame
@@ -40,7 +44,7 @@ public class Main extends JFrame {
 	private void initialize(JFrame frmLoginPage) {
 		JLabel labelLogo = new JLabel("logo");
 		labelLogo.setBackground(Color.WHITE);
-		labelLogo.setIcon(new ImageIcon("D:\\IBIK\\PBO\\2021-2022\\Scripting\\PBO-IBIK-2021\\src\\reguler\\pertemuan9-first-project-maven\\my-app\\src\\main\\java\\com\\ibik\\windows\\images\\logo-ibik-web.png"));
+		labelLogo.setIcon(new ImageIcon("/Users/febryfairuz/Documents/IBIK/2021-2020/Pemograman-Object-Oriented/src/karyawan/pertemuan10/windows/images/logo-ibik-web.png"));
 		labelLogo.setBounds(183, 0, 110, 127);
 		frmLoginPage.getContentPane().add(labelLogo);
 		
@@ -87,13 +91,50 @@ public class Main extends JFrame {
 	}
 	
 	private void actionInitialize(){
-		btnSignIn.addActionListener(new ActionListener(){
+		
+		btnSignIn.addActionListener(new ActionListener() {
+
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				String username = textUsername.getText();
 				String password = String.valueOf(textPassword.getPassword());
 				System.out.println("username:"+username);
 				System.out.println("password:"+password);
+				
+				Main m = new Main();
+				
+				m.Validation(username,password);
 			}
-		});		
+			
+		});
+		
+	}
+	
+	private void Validation(String username, String password) {
+		boolean isValid = false;
+		//check if username and password is empty
+		if( username.isEmpty() && password.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Username or password cannot empty");
+		}else
+		
+		if( !this.isNumber(username) ) { //mengecek apakah inputan berupa angka
+			JOptionPane.showMessageDialog(null, "Username must be a number");
+		}else
+		
+		if( username.length() > 10 ) {
+			JOptionPane.showMessageDialog(null, "Maximum 10 digit");
+		}else
+		
+		if( username.equals(myUserName)  && password.equals(myPassword)) {
+			JOptionPane.showMessageDialog(null, "Hi "+username+", Welcome to this apps.");
+		}else {
+			JOptionPane.showMessageDialog(null, "Username or password are invalid");
+		}
+		//end check is empty
+		
+	}
+	
+	private boolean isNumber(String value){
+		return value.matches("-?\\d+(\\.\\d+)?");  
 	}
 }
