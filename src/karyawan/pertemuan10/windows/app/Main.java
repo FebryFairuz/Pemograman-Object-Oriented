@@ -116,22 +116,28 @@ public class Main extends JFrame {
 		if( username.isEmpty() && password.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "Username or password cannot empty");
 		}else
+		//end check 
 		
-		if( !this.isNumber(username) ) { //mengecek apakah inputan berupa angka
+		//check username is a number	
+		if( !this.isNumber(username) ) {
 			JOptionPane.showMessageDialog(null, "Username must be a number");
 		}else
+		//end chcek
 		
+		
+		//check size of username max 10 digit	
 		if( username.length() > 10 ) {
 			JOptionPane.showMessageDialog(null, "Maximum 10 digit");
 		}else
+		//end check	
 		
+		//check value is equal with condition	
 		if( username.equals(myUserName)  && password.equals(myPassword)) {
 			JOptionPane.showMessageDialog(null, "Hi "+username+", Welcome to this apps.");
 		}else {
 			JOptionPane.showMessageDialog(null, "Username or password are invalid");
 		}
-		//end check is empty
-		
+		//end check
 	}
 	
 	private boolean isNumber(String value){
