@@ -27,6 +27,8 @@ public class Login {
 	private JTextField textUsername;
 	private JPasswordField textPassword;
 	private JButton btnSignIn;
+	private String MyUsername = "456789";
+	private String MyPassword = "290292";
 	//end atribute
 
 	public static void main(String[] args) {
@@ -53,9 +55,6 @@ public class Login {
 	}
 
 	private void initialize() {
-		ConnectionDB koneksi = new ConnectionDB();
-		koneksi.connect();
-		
 		
 		//setting up window frame untuk JFrame
 		frmLoginPage = new JFrame(); //init object JFrame untuk variabel frmLoginPage
@@ -119,9 +118,45 @@ public class Login {
 			public void actionPerformed(ActionEvent e) {
 				String username = textUsername.getText();
 				String password = String.valueOf(textPassword.getPassword());
-				System.out.println("username:"+username);
-				System.out.println("password:"+password);
+				
+				Login main = new Login();
+				main.Validation(username, password);
+				
 			}
 		});		
 	}
+	
+	private void Validation(String username, String password){
+		//check apakah parameter terpanggil atau terkirim
+		System.out.println("username:"+username+" & password:"+password);
+		//end check
+		//isEmpty()=> mengecek isian value dari variabel bernilai kosong
+		//String username = "";
+		//int username = 0;
+		//int username = null;
+		if( username.isEmpty() || password.isEmpty() ) { //pengecekan nilai username & password kosong
+			//System.out.println("Username & password kosong");
+			JOptionPane.showMessageDialog(null, "Mohon masukan username dan password anda dengan tepat.");			
+		
+		}else if(!this.isNumber(username)){ //pengecekan nilai value apakah angka
+			//penggunaan ! bernilai false
+			JOptionPane.showMessageDialog(null, "Harap masukan angka untuk field Username.");
+		
+		}else if(username.length() >= 10){ //pengecekan nilai digit max 10 angka
+			JOptionPane.showMessageDialog(null, "Maximum 10 digit.");
+			
+		}else if(username.equals(MyUsername) && password.equals(MyPassword)){ //pengecekan berdasarkan nilai username NPM dan password adalah DDMMYY
+			//equals() => cara mengecek nilai untuk tipe data String yang memiliki nilai sama.
+			//username == "456789" 
+			JOptionPane.showMessageDialog(null, "Selamat datang di aplikasi Perpustakaan IBIK");		
+		}else { 
+			JOptionPane.showMessageDialog(null,"Data yang anda masukan tidak benar"); 
+		}
+	}
+	
+	private boolean isNumber(String value){
+		return value.matches("-?\\d+(\\.\\d+)?"); //menggunakan REGEX Expression
+		//jika nilai value adalah angka maka nilai balik adalah true
+		//jika nilai value adalah bukan angka maka nilai balik adalah false
+	} 
 }
