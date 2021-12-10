@@ -14,6 +14,9 @@ import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
+
+import karyawan.pertemuan12.library.connection.ConnectionDB;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -50,6 +53,10 @@ public class Login {
 	}
 
 	private void initialize() {
+		ConnectionDB koneksi = new ConnectionDB();
+		koneksi.connect();
+		
+		
 		//setting up window frame untuk JFrame
 		frmLoginPage = new JFrame(); //init object JFrame untuk variabel frmLoginPage
 		frmLoginPage.setTitle("Login Page"); // set title pada window
@@ -61,7 +68,7 @@ public class Login {
 		
 		JLabel labelLogo = new JLabel("logo");
 		labelLogo.setBackground(Color.WHITE);
-		labelLogo.setIcon(new ImageIcon("/Users/febryfairuz/Documents/IBIK/2021-2020/Pemograman-Object-Oriented/src/reguler/pertemuan9-first-project-maven/my-app/src/main/java/com/ibik/windows/images/logo-ibik-web.png"));
+		labelLogo.setIcon(new ImageIcon("D:\\IBIK\\PBO\\2021-2022\\Scripting\\PBO-IBIK-2021\\Pemograman-Object-Oriented\\src\\karyawan\\pertemuan12\\library\\app\\logo-ibik-web.png"));
 		labelLogo.setBounds(183, 0, 110, 127);
 		frmLoginPage.getContentPane().add(labelLogo);
 		
