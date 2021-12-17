@@ -29,7 +29,7 @@ public class Login {
 	private JTextField textUsername;
 	private JPasswordField textPassword;
 	private JButton btnSignIn;
-	private String MyUsername = "456789";
+	private String MyUsername = "456n789";
 	private String MyPassword = "290292";
 	//end atribute
 
