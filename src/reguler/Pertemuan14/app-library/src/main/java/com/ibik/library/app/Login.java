@@ -17,9 +17,11 @@ import java.awt.Panel;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
+import com.ibik.library.app.connection.ConnectionDB;
 
 import javax.swing.JPasswordField;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 import java.awt.event.ActionEvent;
 
 public class Login {
@@ -48,7 +50,15 @@ public class Login {
 	 * Create the application.
 	 */
 	public Login() {
-		initialize();
+		
+		ConnectionDB conn =  new ConnectionDB();
+		try {
+			conn.connect();
+			initialize();
+		} catch (SQLException e) {
+			JOptionPane.showMessageDialog(null, e.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -134,10 +144,10 @@ public void validasi(String username, String password) {
 		JOptionPane.showMessageDialog(null, "Username & Password harus diisi","Error",JOptionPane.ERROR_MESSAGE);
 	}else if(username.length()>10) {
 		System.out.println("Maximum 10 character untuk username");
-		JOptionPane.showConfirmDialog(null,"Maximum 10 character untuk username","Konfirmasi",JOptionPane.YES_NO_OPTION);
+		JOptionPane.showMessageDialog(null,"Maximum 10 character untuk username","Konfirmasi",JOptionPane.ERROR_MESSAGE);
 	}else if(password.length()>6) {
 		System.out.println("Maximum 6 character untuk Password");
-		JOptionPane.showOptionDialog(null, "Maximum 6 character untuk Password", "Pilihan",JOptionPane.YES_OPTION,JOptionPane.INFORMATION_MESSAGE, null, null,null);
+		JOptionPane.showMessageDialog(null, "Maximum 6 character untuk Password", "Pilihan",JOptionPane.ERROR_MESSAGE);
 	}else if(dataLogin.isNumber(username) == false) {
 		System.out.println("Harap masukan angka.");
 		JOptionPane.showMessageDialog(null, "Harus pake angka loch", "Salah tau", JOptionPane.ERROR_MESSAGE);
